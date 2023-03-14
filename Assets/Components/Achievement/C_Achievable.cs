@@ -6,4 +6,5 @@ public class C_Achievable : MonoBehaviour
 {
     public string achievementId = "None";
     public GameObject objToActivate;
+    public GameObject objToActivateElite;
 }

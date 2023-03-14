@@ -32,7 +32,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 40fa955a6fd43cf4885f5f6b99096926, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -44,7 +44,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 009f6f6b3ec886f4aa0fa4d7622fee0f, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 2
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -56,7 +56,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 1f536930d3a0ea64d95d72d2e97a3b62, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 2
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -80,7 +80,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 4756f2d8bc26dbf48a77406c099051c5, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -92,7 +92,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: ce968553bc7cff24a85929f1fcd31957, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -104,7 +104,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: d88bf6d6673460b45a8c33413dc642c2, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.5
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -116,7 +116,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 543607d032ce3ad479576c4b26658477, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.8
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -140,7 +140,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 231e5b5140ffdc845834661acd069779, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -152,7 +152,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: e987e6ff6798eed45bd162fdb57801c3, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -164,7 +164,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: bdc73a41e409d234c8318d4bf77c99b1, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -176,7 +176,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 4a97218bb91a98c4181269e21fe11ee8, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 3
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -188,7 +188,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 2976dbf8cc5cfe349a61d33e55cf563d, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -212,7 +212,7 @@ MonoBehaviour:
     img: {fileID: -551082938411016477, guid: c7987bd8ce19fb8458e592c6717f930b, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -229,14 +229,14 @@ MonoBehaviour:
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
-  - id: Kingslime
+  - id: kingslime
     name: King Slime
     description: Survive the King of slimes
     color: {r: 1, g: 0.698186, b: 0, a: 1}
     img: {fileID: 21300000, guid: accedf211710625488f550d9e01a40d6, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.6
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:
@@ -248,7 +248,7 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: a2f205c55d336e64f8fb7da1b780dcbc, type: 3}
     bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.6
-    isUnlocked: 0
+    isUnlocked: 1
     isDescriptionLocked: 0
     OnUnlock:
       m_PersistentCalls:

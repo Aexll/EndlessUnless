@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -616,6 +617,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PuppetJumpscare_18: 5024539303366592299
+      PuppetJumpscare_6: -5413225845390779935
+      PuppetJumpscare_13: 4153942698298376136
+      PuppetJumpscare_2: -2007231254456089071
+      PuppetJumpscare_17: -5182115216216043194
+      PuppetJumpscare_15: -5380559881050429647
+      PuppetJumpscare_7: 7498112755868728200
+      PuppetJumpscare_9: 861147909693161321
+      PuppetJumpscare_8: 723971641737761859
+      PuppetJumpscare_5: -7755505270478237622
+      PuppetJumpscare_0: 7235835777991211244
+      PuppetJumpscare_1: 3891388420468080804
+      PuppetJumpscare_3: 4099497631416610708
+      PuppetJumpscare_10: 2389496257267234513
+      PuppetJumpscare_14: 819315690866315152
+      PuppetJumpscare_20: 3414254825675927804
+      PuppetJumpscare_12: 4961529698948148589
+      PuppetJumpscare_16: -3563152367891848674
+      PuppetJumpscare_4: 5305434788912527229
+      PuppetJumpscare_11: -9175833891053742090
+      PuppetJumpscare_19: 8200108791876321552
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

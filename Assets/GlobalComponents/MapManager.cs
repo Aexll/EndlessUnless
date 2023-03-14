@@ -25,6 +25,7 @@ public class MapManager : MonoBehaviour
 
         nb = -1;
 
+        // unlock new achievements
         if (AchievableList != null)
         {
             nb += 1;
