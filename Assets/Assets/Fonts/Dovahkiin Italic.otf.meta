@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 6b8827592319652428a87ccb80b6f5b1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Dovahkiin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b9ea1128584a6224f801ac5f2afd0ed9, type: 3}
+  - {fileID: 12800000, guid: 4838d9deef4823c4685bbfba94ed6afd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
