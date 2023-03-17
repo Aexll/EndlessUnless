@@ -26,6 +26,11 @@ public class C_RotateTowarTag : MonoBehaviour
     public bool flipY = true;
     //public bool flipSprite;
 
+    public void SetRotationSpeed(float newRotSpeed)
+    {
+        rotationSpeed = newRotSpeed;
+    }
+
     void Update()
     {
         if (Target != null)

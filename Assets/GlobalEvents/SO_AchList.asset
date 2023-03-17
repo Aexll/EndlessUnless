@@ -18,106 +18,193 @@ MonoBehaviour:
     description: Default
     color: {r: 1, g: 1, b: 1, a: 1}
     img: {fileID: 21300000, guid: 54587047ef5f01948b3f825067dc2373, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 2
     isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: nah
     name: nahhhh bruhh fr
     description: Default
-    color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     img: {fileID: 21300000, guid: 40fa955a6fd43cf4885f5f6b99096926, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: nuke
     name: big boom
     description: Meet da nuke
-    color: {r: 1, g: 0.7761822, b: 0.6273585, a: 1}
+    color: {r: 0.27450982, g: 0.25882354, b: 0.18039216, a: 1}
     img: {fileID: 21300000, guid: 009f6f6b3ec886f4aa0fa4d7622fee0f, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 2
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: bomber
-    name: 35t of pure democratie
-    description: Oversee the fighting jet
+    name: A-18 Hornet
+    description: 35t of pure democratie
     color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
     img: {fileID: 21300000, guid: 1f536930d3a0ea64d95d72d2e97a3b62, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 2
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: bomber(e)
+    name: A-2 Savage
+    description: Remember; we are the good guys and that have oil
+    color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+    img: {fileID: 21300000, guid: 0c5d0955677f92544a0bcef0cee4ad4d, type: 3}
+    size: 3
     isUnlocked: 1
     isDescriptionLocked: 0
+    maxRound: 3
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: tnt
-    name: griefer's best friend
-    description: Survive the TNT
+    name: TNT
+    description: griefer's best friend
     color: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
     img: {fileID: 21300000, guid: 2cd4965c589b459409f6920c071d08b2, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.5
     isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: tnt(e)
+    name: Big TNT
+    description: griefer's lover
+    color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+    img: {fileID: 21300000, guid: 475ce3eea6533e14ba2112c4bd09021e, type: 3}
+    size: 0.5
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: fish
     name: Le fish
-    description: Survie au fish
+    description: Very tasty fish
     color: {r: 0.7971698, g: 0.93905574, b: 1, a: 1}
     img: {fileID: 21300000, guid: 4756f2d8bc26dbf48a77406c099051c5, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: fish(e)
+    name: Les fishs
+    description: Hes bringin' his wole familly now
+    color: {r: 0.7971698, g: 0.93905574, b: 1, a: 1}
+    img: {fileID: 21300000, guid: 4756f2d8bc26dbf48a77406c099051c5, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: button
     name: The red button
     description: Would you press the button ?
-    color: {r: 0.1745283, g: 0.81969965, b: 1, a: 1}
+    color: {r: 1, g: 0.17647058, b: 0.19032623, a: 1}
     img: {fileID: 21300000, guid: ce968553bc7cff24a85929f1fcd31957, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: button(e)
+    name: The red, green, blue, and yellow buttons
+    description: Would should press all the button.
+    color: {r: 1, g: 0.17647058, b: 0.19032623, a: 1}
+    img: {fileID: 1392270879, guid: 4ad35d372a895434ba8392cf486c0147, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: discord
-    name: Did you checked your discord ?
-    description: Encounter wilump
+    name: Discord
+    description: Did you checked your discord ?
     color: {r: 0.34509805, g: 0.39607847, b: 0.9490197, a: 1}
     img: {fileID: 21300000, guid: d88bf6d6673460b45a8c33413dc642c2, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.5
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: discord(e)
+    name: To much discord
+    description: nahhh whos kitten is that bruh
+    color: {r: 0.34509805, g: 0.39607847, b: 0.9490197, a: 1}
+    img: {fileID: 21300000, guid: bb131397e74181049be868a243f5f6e8, type: 3}
+    size: 0.5
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: xperror
     name: Error at C:\windows\system32
-    description: Encounter an error
+    description: I should really move to unreal now
     color: {r: 1, g: 0.4115971, b: 0.3726415, a: 1}
     img: {fileID: 21300000, guid: 543607d032ce3ad479576c4b26658477, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.8
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: xperror(e)
+    name: System restart
+    description: time to touch some grass !
+    color: {r: 1, g: 0.4115971, b: 0.3726415, a: 1}
+    img: {fileID: 21300000, guid: 543607d032ce3ad479576c4b26658477, type: 3}
+    size: 0.8
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
@@ -126,118 +213,246 @@ MonoBehaviour:
     description: get called
     color: {r: 0, g: 0.6862745, b: 0.94117653, a: 1}
     img: {fileID: 21300000, guid: c7c00e5a69eee2e428dbff5312d5bb82, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
     isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: gaster
     name: Bad time enjoyer
     description: Survive the blaster
-    color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     img: {fileID: 21300000, guid: 231e5b5140ffdc845834661acd069779, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: gaster(e)
+    name: Gaster Dancer
+    description: Somwhere aroung the rainbow...
+    color: {r: 1, g: 0, b: 0.83267355, a: 1}
+    img: {fileID: 21300000, guid: 231e5b5140ffdc845834661acd069779, type: 3}
     size: 1
     isUnlocked: 1
     isDescriptionLocked: 0
+    maxRound: 3
+    gameMode: 1
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: gaster(c)
+    name: Gaster Darker
+    description: Somwhere aroung the rainbow...
+    color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+    img: {fileID: 21300000, guid: a4c6da88e17a0db4aa730aa758fbe3ed, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 2
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: goomba
-    name: Walking mushroom
-    description: Survive the goomba
-    color: {r: 0.48584908, g: 0.9940498, b: 1, a: 1}
+    name: Goomba
+    description: Walking mushroom
+    color: {r: 0.7960785, g: 0.32156864, b: 0.07450981, a: 1}
     img: {fileID: 21300000, guid: e987e6ff6798eed45bd162fdb57801c3, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: goomba(e)
+    name: Fast Goomba
+    description: Running mushroom
+    color: {r: 0.7960785, g: 0.32156864, b: 0.07450981, a: 1}
+    img: {fileID: 21300000, guid: e987e6ff6798eed45bd162fdb57801c3, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: sus
     name: AMOGUS
-    description: survive the sussyness
+    description: stop posting about among us
     color: {r: 1, g: 0, b: 0, a: 1}
     img: {fileID: 21300000, guid: bdc73a41e409d234c8318d4bf77c99b1, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: sus(e)
+    name: 'AMOGUS AMOGUS AMOGUS AMOGUS AMOGUS '
+    description: 'GET OUT OF MY HEAD GET OUT OF MY HEAD GET OUT OF MY HEAD GET OUT
+      OF MY HEAD '
+    color: {r: 1, g: 0, b: 0, a: 1}
+    img: {fileID: 1946219296, guid: de4acead1207dc840a51d3e9fbaace2d, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: nightmare
-    name: Scared of the dark ?
-    description: survive the nightmare puppet
+    name: Nightmarione
+    description: Scared of the dark ?
     color: {r: 0, g: 0, b: 0, a: 1}
     img: {fileID: 21300000, guid: 4a97218bb91a98c4181269e21fe11ee8, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 3
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: nightmare(e)
+    name: Nightmar of Nightmare
+    description: Last chance to look at me hector
+    color: {r: 0, g: 0, b: 0, a: 1}
+    img: {fileID: 21300000, guid: 6f91dd7a8c9c787499a25f5fbd0a9e12, type: 3}
+    size: 3
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: rocket
     name: HEHEHE HA
-    description: Survive the rocket
+    description: bro just waste 6 elixirs
     color: {r: 1, g: 0.639942, b: 0.32549024, a: 1}
     img: {fileID: 21300000, guid: 2976dbf8cc5cfe349a61d33e55cf563d, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: rocket(e)
+    name: GRRRRRRR
+    description: bro wasted his miror
+    color: {r: 1, g: 0.639942, b: 0.32549024, a: 1}
+    img: {fileID: 21300000, guid: 51236b0b6d380d14c91bc8f2de93e2f1, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: tgv
-    name: Not the strike today
-    description: Survive the always-at-time-train
+    name: SNCF
+    description: Not the strike today
     color: {r: 0.7323434, g: 0.2588235, b: 1, a: 1}
     img: {fileID: 21300000, guid: c8f4102e3ee061a4fa502f83f708dabf, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
     isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: tgv(e)
+    name: SNCF
+    description: "Plus d'id\xE9es pour cette descriptions, d\xE9so"
+    color: {r: 0.7323434, g: 0.2588235, b: 1, a: 1}
+    img: {fileID: 21300000, guid: c8f4102e3ee061a4fa502f83f708dabf, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: keydoor
-    name: Whos can it be knocking ?
-    description: Open the door and win
+    name: One door
+    description: Whos can it be knocking ?
     color: {r: 1, g: 0.25943398, b: 0.25943398, a: 1}
     img: {fileID: -551082938411016477, guid: c7987bd8ce19fb8458e592c6717f930b, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: keydoor(e)
+    name: Two Doors
+    description: Because one wasnt enough
+    color: {r: 0.2588235, g: 0.3970028, b: 1, a: 1}
+    img: {fileID: -551082938411016477, guid: c7987bd8ce19fb8458e592c6717f930b, type: 3}
+    size: 1
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: cthulhu
     name: Eye of Cthulhu
     description: tf used da suspicous eye ??
-    color: {r: 0.96470594, g: 0.6745098, b: 0, a: 1}
+    color: {r: 0.12950963, g: 0.9647059, b: 0, a: 1}
     img: {fileID: 21300000, guid: 1d5a4cb704da2e74b92a76eacd46b226, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.6
     isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: cthulhu(e)
+    name: Spazmatism
+    description: bro next time smhn use da mechanical eye i'm banning
+    color: {r: 0.12950963, g: 0.9647059, b: 0, a: 1}
+    img: {fileID: 21300000, guid: 4fcf0fe84bba42b4ebd591cc8bffc6c4, type: 3}
+    size: 0.6
+    isUnlocked: 1
+    isDescriptionLocked: 0
+    maxRound: 3
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
   - id: kingslime
     name: King Slime
     description: Survive the King of slimes
-    color: {r: 1, g: 0.698186, b: 0, a: 1}
+    color: {r: 0.12941177, g: 0.96470594, b: 0, a: 1}
     img: {fileID: 21300000, guid: accedf211710625488f550d9e01a40d6, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
@@ -246,10 +461,24 @@ MonoBehaviour:
     description: Survive evils tetrinos
     color: {r: 0.39058298, g: 0.2688679, b: 1, a: 1}
     img: {fileID: 21300000, guid: a2f205c55d336e64f8fb7da1b780dcbc, type: 3}
-    bg: {fileID: 21300000, guid: 9f37b510bb7f66b498879a08f32f4a03, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: tetris(e)
+    name: Tetris
+    description: Survive evils and big tetrinos
+    color: {r: 0.39058298, g: 0.2688679, b: 1, a: 1}
+    img: {fileID: 21300000, guid: a2f205c55d336e64f8fb7da1b780dcbc, type: 3}
+    size: 0.6
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []

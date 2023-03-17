@@ -7,6 +7,7 @@ public class C_Spawner : MonoBehaviour
     [SerializeField] private GameObject prefab;
     [SerializeField] private Transform spawnTransform;
     [SerializeField] private Vector3 Scale = new Vector3(1,1,1);
+    [SerializeField] private bool useParentRot = false;
 
     public void Spawn()
     {
@@ -14,7 +15,11 @@ public class C_Spawner : MonoBehaviour
             Instantiate(prefab, spawnTransform);
         else
         {
-            var spawned = Instantiate(prefab, gameObject.transform.position, gameObject.transform.rotation);
+            GameObject spawned;
+            if(useParentRot)
+                spawned = Instantiate(prefab, gameObject.transform.position, gameObject.transform.rotation);
+            else
+                spawned = Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
             spawned.transform.localScale = Scale;
         }
     }

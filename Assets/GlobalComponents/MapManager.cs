@@ -1,64 +1,96 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[Serializable]
+public enum GameMode
+{
+    Normal,
+    Elite,
+    Cursed,
+}
+
+
 public class MapManager : MonoBehaviour
 {
 
     [SerializeField] private SO_AchievementList _AchievementList;
+    [SerializeField] private GameObject Player;
 
     // list of all objects on the map with the achievable script
     private List<C_Achievable> AchievableList;
 
     public UnityEvent<string> OnNewNB;
-    private int nb = 0;
 
+    private int round = 0;
+    GameMode gameMode = GameMode.Normal;
+
+
+    private void Awake()
+    {
+        AchievableList = AxelUtils.FindObjectsImplementingInterface<C_Achievable>(false);
+    }
 
     private void Start()
     {
-        AchievableList = AxelUtils.FindObjectsImplementingInterface<C_Achievable>(true);
+        Player.SetActive(false);
+        //PauseGame();
     }
 
     public void OnPlayerWin()
     {
-
-        nb = -1;
-
+        int nb = 0;
         // unlock new achievements
         if (AchievableList != null)
-        {
-            nb += 1;
+        {   
+            // count
             foreach (var item in AchievableList)
             {
-                if (item.objToActivate.activeSelf)
+                if(item.isActive(gameMode))
                 {
-                    //print("unlocked " + item.achievementId);
-                    _AchievementList.UnlockAchievement(item.achievementId);
                     nb++;
                 }
-                //else print("already unlocked " + item.achievementId);
+            }
+
+            round = nb;
+
+            foreach (var item in AchievableList)
+            {
+                if(item.isActive(gameMode))
+                {
+                    string finalId = item.achievementId;
+                    if (gameMode == GameMode.Elite) finalId += "(e)";
+                    else if (gameMode == GameMode.Cursed) finalId += "(c)";
+                    print(finalId);
+                    _AchievementList.UnlockAchievement(finalId, round);
+                }
             }
         }
         
-        var obj = FindSpawnable();
+        var obj = FindSpawnable(gameMode);
         if(obj != null)
         {
             obj.SetActive(true);
         }
 
-        OnNewNB?.Invoke(nb.ToString());
+        OnNewNB?.Invoke(round.ToString());
     }
 
-    private GameObject FindSpawnable()
+    private GameObject FindSpawnable(GameMode gm)
     {
         AchievableList.Shuffle();
         foreach (var item in AchievableList)
         {
-            if (!item.objToActivate.activeSelf)
+            if (!item.isActive(gm))
             {
-                return item.objToActivate;
+                if(item.objs.TryGetValue(gm,out GameObject go))
+                {
+                    return go;
+                }
             }
+
         }
         return null;
     }
@@ -80,6 +112,33 @@ public class MapManager : MonoBehaviour
         }
 
     }
+
+
+    public void StartGame(int mode)
+    {
+        Time.timeScale = 1f;
+        Player.SetActive(true);
+        switch (mode)
+        {
+            case 0:
+                gameMode = GameMode.Normal;
+                break;
+            case 1:
+                gameMode = GameMode.Elite;
+                break;
+            case 2:
+                gameMode = GameMode.Cursed;
+                break;
+            default: break;
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
+    
 
 
 }

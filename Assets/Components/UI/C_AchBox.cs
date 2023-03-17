@@ -15,6 +15,9 @@ public class C_AchBox : MonoBehaviour
     [SerializeField] private Image bg_1;
     [SerializeField] private Image bg_2;
     [SerializeField] private Sprite lockedSprite;
+    [SerializeField] private List<Sprite> bg_normal;
+    [SerializeField] private List<Sprite> bg_elite;
+    [SerializeField] private List<Sprite> bg_cursed;
     [SerializeField] private AspectRatioFitter ARF;
     [SerializeField] private RectTransform imgbox;
 
@@ -103,13 +106,53 @@ public class C_AchBox : MonoBehaviour
             //imgbox.sizeDelta = new Vector2(achievement.size * 80, achievement.size * 80);
 
             // bg
-            bg.sprite = achievement.bg;
-            bg_1.sprite = achievement.bg;
-            bg_2.sprite = achievement.bg;
+            /*
+            bg.sprite = bg_normal;
+            bg_1.sprite = bg_normal;
+            bg_2.sprite = bg_normal;
+            */
+
+            List<Sprite> temp_chosenList;
+
+            switch (achievement.gameMode)
+            {
+                case GameMode.Normal:
+                    temp_chosenList = bg_normal;
+                    break;
+                case GameMode.Elite:
+                    temp_chosenList = bg_elite;
+                    break;
+                case GameMode.Cursed:
+                    temp_chosenList = bg_cursed;
+                    break;
+                default:
+                    temp_chosenList = new List<Sprite>();
+                    break;
+            }
+
+            int nb = Mathf.Clamp(achievement.maxRound / temp_chosenList.Count, 0, temp_chosenList.Count -1);
+            bg.sprite = temp_chosenList[nb];
+
+
+
+
+            if(achievement.isUnlocked)
+                txt_name.color = achievement.color;
+
 
             // bg color
-            bg.color = achievement.color;
-            bg_1.color = achievement.color;
+            if (!achievement.isUnlocked)
+            {
+                bg.color = new Color(0.2f, 0.2f, 0.2f, 1);
+                bg_1.color = new Color(0.2f, 0.2f, 0.2f, 1);
+            }
+            else
+            {
+                bg.color = Color.white;
+                bg_1.color = Color.white;
+            }
+            //bg.color = achievement.color;
+            //bg_1.color = achievement.color;
             //bg_2.color = achievement.color;
 
             // textes
@@ -130,5 +173,4 @@ public class C_AchBox : MonoBehaviour
             }
         }
     }
-
 }

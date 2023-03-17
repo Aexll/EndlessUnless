@@ -7,4 +7,5 @@ using UnityEngine.Events;
 public class SO_Action : ScriptableObject
 {
     public UnityEvent OnTrigger;
+
 }

@@ -27,7 +27,7 @@ public class C_Delayer : MonoBehaviour, IResetable
     public Dictionary<DelayEvent,bool> builtDelayEvents= new Dictionary<DelayEvent,bool>();
 
     private Coroutine coroutine;
-    private float remainingTime;
+    public float remainingTime;
     public float RemainingTime
     {
         get { return remainingTime; }
@@ -78,6 +78,11 @@ public class C_Delayer : MonoBehaviour, IResetable
             StopCoroutine(coroutine);
             coroutine = null;
         }
+    }
+
+    public void SetTimer(float time)
+    {
+        remainingTime = time;
     }
 
     public void ResetEvents()

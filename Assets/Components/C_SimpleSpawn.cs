@@ -8,6 +8,7 @@ public class C_SimpleSpawn : MonoBehaviour
     public GameObject spawnPrefab;
     public Vector3 spawnPosition;
     public float spawnAngle;
+    public Vector3 spawnSize;
     [Tooltip("leave empty if no parent (sad)")]
     public Transform parent;
     public bool absolutPosition;
@@ -43,6 +44,8 @@ public class C_SimpleSpawn : MonoBehaviour
             newlySpawned = Instantiate(spawnPrefab, finalPosition,finalRotation, parent);
         else
             newlySpawned = Instantiate(spawnPrefab, finalPosition,finalRotation);
+        
+        newlySpawned.transform.localScale = spawnSize;
     }
 
     public void Spawn(Vector3 position)
@@ -51,6 +54,9 @@ public class C_SimpleSpawn : MonoBehaviour
             newlySpawned = Instantiate(spawnPrefab,position,Quaternion.identity,parent);
         else
             newlySpawned = Instantiate(spawnPrefab,position,Quaternion.identity);
+        
+        newlySpawned.transform.localScale = spawnSize;
+    
     }
 
     public void SetPosition(Vector3 position)

@@ -13,7 +13,7 @@ public class SO_AchievementList : ScriptableObject
     //private List<string> unlocked = new List<string>();
     //private Dictionary<string,Achievement> achievements = new Dictionary<string, Achievement>();
 
-    public void UnlockAchievement(string id)
+    public void UnlockAchievement(string id, int round)
     {
         Achievement toUnlockAch = GetAchievementById(id);
         if (toUnlockAch != null)
@@ -21,11 +21,14 @@ public class SO_AchievementList : ScriptableObject
             //Debug.Log("length: " + unlocked.Count );
             if (!IsAchivementUnlocked(toUnlockAch))
             {
-                toUnlockAch.isUnlocked = true;
                 OnNewAchievementUnlocked?.Invoke(toUnlockAch);
-                OnUpdateAch?.Invoke(id);
             }
-            else Debug.Log("Already have the achievement '" + id + "'");
+
+            toUnlockAch.isUnlocked = true;
+            OnUpdateAch?.Invoke(id);
+            toUnlockAch.maxRound = Mathf.Max(toUnlockAch.maxRound,round);
+
+            //Debug.Log("Already have the achievement '" + id + "'");
         }
         else Debug.Log("Achievement '" + id + "' is not found");
         
@@ -57,7 +60,8 @@ public class SO_AchievementList : ScriptableObject
     {
         foreach (var item in allAchievements)
         {
-            item.isUnlocked = false;
+            //item.isUnlocked = false;
+            item.clean();
         }
         OnUpdateAch?.Invoke("_all"); // _all call for everyones
     }
