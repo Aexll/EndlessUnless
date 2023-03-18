@@ -67,7 +67,7 @@ MonoBehaviour:
         m_Calls: []
   - id: bomber(e)
     name: A-2 Savage
-    description: Remember; we are the good guys and that have oil
+    description: Remember; we are the good guys and they have oil
     color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
     img: {fileID: 21300000, guid: 0c5d0955677f92544a0bcef0cee4ad4d, type: 3}
     size: 3
@@ -453,6 +453,19 @@ MonoBehaviour:
     isDescriptionLocked: 0
     maxRound: 0
     gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: kingslime(e)
+    name: Queen Slime
+    description: Survive the QUeen of slimes
+    color: {r: 0.12941177, g: 0.96470594, b: 0, a: 1}
+    img: {fileID: 21300000, guid: 2df7c78534af0aa4499eca00876cad14, type: 3}
+    size: 0.6
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,7 +14,7 @@ public enum GameMode
 }
 
 
-public class MapManager : MonoBehaviour
+public class MapManager : MonoBehaviour, IResetable
 {
 
     [SerializeField] private SO_AchievementList _AchievementList;
@@ -36,7 +37,7 @@ public class MapManager : MonoBehaviour
     private void Start()
     {
         Player.SetActive(false);
-        //PauseGame();
+        PauseGame();
     }
 
     public void OnPlayerWin()
@@ -75,7 +76,7 @@ public class MapManager : MonoBehaviour
             obj.SetActive(true);
         }
 
-        OnNewNB?.Invoke(round.ToString());
+        OnNewNB?.Invoke((round-1).ToString());
     }
 
     private GameObject FindSpawnable(GameMode gm)
@@ -113,7 +114,6 @@ public class MapManager : MonoBehaviour
 
     }
 
-
     public void StartGame(int mode)
     {
         Time.timeScale = 1f;
@@ -138,7 +138,8 @@ public class MapManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    
-
-
+    public void Reseting()
+    {
+        print("Player dead");
+    }
 }
