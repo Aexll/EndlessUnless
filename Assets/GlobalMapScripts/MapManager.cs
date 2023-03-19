@@ -20,6 +20,8 @@ public class MapManager : MonoBehaviour
     [SerializeField] private SO_AchievementList _AchievementList;
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject LoseMenu;
+    [SerializeField] private GameObject WinMenu;
+    [SerializeField] private int winAfterX = 18;
 
 
     // list of all objects on the map with the achievable script
@@ -94,6 +96,13 @@ public class MapManager : MonoBehaviour
             }
 
             EntityOnScreen.Value = nb;
+
+            // show the win menu
+            if(nb >= winAfterX)
+            {
+                WinMenu.SetActive(true);
+                PauseGame();
+            }
 
             // unlock locked achievments
             foreach (var item in AchievableList)
