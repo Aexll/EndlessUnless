@@ -5,7 +5,7 @@
 
 
 ## Controles
-- Use `S` ans `D` to move horizontaly
+- Use `Q` ans `D` to move horizontaly
 - Use `Z` to jump
 - Use `R` to kill yourself (ingame)
 
@@ -121,19 +121,19 @@ There is two Games Modifiers `Survival` and `noHit`
 >## Goomba
     Now change direction (you'll see i cant quite explain it here)
 
->## Imposter
+>## Imposter and crewmates
     Multiples crewmate will spawn, yet only one is the imposter
 
 >## Nightmarione
     Bigger and Angryer...
 
->## Rocket
+>## Rockets
     Bro used the mirror card
 
->## Door and Key
+>## Doors and Keys
     One more door
 
->## The red button
+>## The buttons
     3 more buttons
 
 >## TGV
@@ -142,7 +142,7 @@ There is two Games Modifiers `Survival` and `noHit`
 >## Eye of Cthulhu
     Litteraly the terraria boss, he also brang his littles brothers
 
->## King Slime
+>## Queen Slime
     Now the Queen Slime, bigger and angryer too
 
 >## Tetris
