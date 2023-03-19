@@ -1,6 +1,7 @@
 # ReadMe
 
-![](https://github.com/Aexll/EndlessUnless/blob/main/Assets/Assets/The-revenge-of-the-skull.pnghttps://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+# The Revenge of the skull emoji
+>### V0.0.1
 
 
 ## Controles
@@ -17,7 +18,7 @@ Each times you win, a new entity will be spawned in the game
 Wining the game will unlock all the **achievements** of the Entities that were present on the map when you won
 
 
-There is two levels of difficulty `Normal` and `Elite`
+There is two levels of difficulty `Normal` and `Elite` (which is harder)
 
 There is two Games Modifiers `Survival` and `noHit`
 
@@ -91,3 +92,58 @@ There is two Games Modifiers `Survival` and `noHit`
 
 
 
+## `Elite` difficulty
+
+> ## Nuke
+    time is now 5 seconds
+
+> ## Bomber plane
+    Bigger plan, bigger bombes
+
+>## TNT
+    Bigger blast
+
+>## Le Fish
+    His familly joined the crew
+
+>## Discord
+    Launch 3 more nitros
+
+>## Windows XP Error
+    Restart the game if not clicked
+
+>## Skype Call
+    Not aviable in elite mode
+
+>## Gaster Blaster
+    Lazer is now moving upon blast
+
+>## Goomba
+    Now change direction (you'll see i cant quite explain it here)
+
+>## Imposter
+    Multiples crewmate will spawn, yet only one is the imposter
+
+>## Nightmarione
+    Bigger and Angryer...
+
+>## Rocket
+    Bro used the mirror card
+
+>## Door and Key
+    One more door
+
+>## The red button
+    3 more buttons
+
+>## TGV
+    Bigger and faster and now pink !
+
+>## Eye of Cthulhu
+    Litteraly the terraria boss, he also brang his littles brothers
+
+>## King Slime
+    Now the Queen Slime, bigger and angryer too
+
+>## Tetris
+    the evils tetrinos are now bigger
