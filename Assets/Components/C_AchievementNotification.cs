@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 
-public class AchievementNotification : MonoBehaviour
+public class C_AchievementNotification : MonoBehaviour
 {
 
     public SO_AchievementList soAchievementsInstances;

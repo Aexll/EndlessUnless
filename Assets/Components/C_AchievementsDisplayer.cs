@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.AudioSettings;
 
-public class AchShower : MonoBehaviour
+public class C_AchievementsDisplayer : MonoBehaviour
 {
 
     [SerializeField] GameObject boxPrefab;

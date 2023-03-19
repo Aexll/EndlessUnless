@@ -66,7 +66,8 @@ public class MapManager : MonoBehaviour
     private void Start()
     {
         ResetAllStates();
-
+        bNoHit.Value = false;
+        bSurvival.Value = false;
     }
 
     private void Update()
@@ -164,6 +165,7 @@ public class MapManager : MonoBehaviour
 
     public void StartGame()
     {
+        CleanAllSpawned();
         UnpauseGame();
         PlayerDeaths.Value = 0;
     }
@@ -201,9 +203,9 @@ public class MapManager : MonoBehaviour
         Player.SetActive(false);
         InGameTime.Value = 0;
         EntityOnScreen.Value = 0;
-        intGameMode.Value = 0;
-        bNoHit.Value = bNoHit.Value;        // just to trigger the event
-        bSurvival.Value = bSurvival.Value;  //
+        intGameMode.Value = intGameMode.Value;  //
+        bNoHit.Value = bNoHit.Value;            // just to trigger the event
+        bSurvival.Value = bSurvival.Value;      //
         PauseGame();
     }
 }

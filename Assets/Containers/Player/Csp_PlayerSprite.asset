@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Ei_Test
-  m_EditorClassIdentifier: Assembly-CSharp::SO_IntEvent
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+  m_Script: {fileID: 11500000, guid: 82d63ef4702a49846b174f7878544a9e, type: 3}
+  m_Name: Csp_PlayerSprite
+  m_EditorClassIdentifier: 
