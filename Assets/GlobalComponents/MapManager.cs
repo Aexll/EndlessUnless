@@ -41,6 +41,7 @@ public class MapManager : MonoBehaviour
     // game info
     public intc EntityOnScreen;
     public floatc InGameTime;
+    public intc PlayerDeaths;
 
     // game events
     public SO_Action PlayerRespawn;
@@ -158,8 +159,10 @@ public class MapManager : MonoBehaviour
 
     public void OnPlayerRespawn()
     {
+        PlayerDeaths.Value++;
+
         print("Player dead");
-        if(bNoHit || bSurvival)
+        if(bNoHit.Value || bSurvival.Value)
         {
             PauseGame();
             CleanAllSpawned();
