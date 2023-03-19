@@ -22,6 +22,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject LoseMenu;
     [SerializeField] private GameObject WinMenu;
     [SerializeField] private int winAfterX = 18;
+    [SerializeField] private Sprite defaultPlayerSprite;
 
 
     // list of all objects on the map with the achievable script
@@ -47,6 +48,7 @@ public class MapManager : MonoBehaviour
     public floatc InGameTime;
     public intc PlayerDeaths;
     public boolc InGame;
+    public Spritec playerSprite;
 
     // game events
     public SO_Action PlayerRespawn;
@@ -63,6 +65,7 @@ public class MapManager : MonoBehaviour
     {
         AchievableList = AxelUtils.FindObjectsImplementingInterface<C_Achievable>(false);
         PlayerRespawn.OnTrigger.AddListener(OnPlayerRespawn);
+        playerSprite.Value = defaultPlayerSprite;
     }
 
     private void Start()
