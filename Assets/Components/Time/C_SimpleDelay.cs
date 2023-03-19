@@ -31,7 +31,7 @@ public class C_SimpleDelay : MonoBehaviour, IResetable
 
     public void Trigger()
     {
-        OnTrigger.Invoke();
+        OnTrigger?.Invoke();
         if (loop) _StartDelay();
     }
 

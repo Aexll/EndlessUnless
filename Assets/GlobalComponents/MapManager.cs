@@ -28,6 +28,8 @@ public class MapManager : MonoBehaviour
     //public UnityEvent<string> OnNewNB;
 
 
+    public float survivalSpawnInterval = 5f;
+
     // game options
     //private GameMode gameMode = GameMode.Normal;
     //private bool NoHitEnabled = false;
@@ -42,6 +44,7 @@ public class MapManager : MonoBehaviour
     public intc EntityOnScreen;
     public floatc InGameTime;
     public intc PlayerDeaths;
+    public boolc InGame;
 
     // game events
     public SO_Action PlayerRespawn;
@@ -63,6 +66,15 @@ public class MapManager : MonoBehaviour
     private void Start()
     {
         ResetAllStates();
+
+    }
+
+    private void Update()
+    {
+        if (InGame.Value)
+        {
+            InGameTime.Value += Time.deltaTime;
+        }
     }
 
     public void OnPlayerWin()
@@ -100,14 +112,19 @@ public class MapManager : MonoBehaviour
             EntityOnScreen.Value = 0;
         }
 
+        SpawnNewEntity();
 
+    }
+
+
+    public void SpawnNewEntity()
+    {
         // spawn a new object
         var obj = FindSpawnable(gameMode);
         if(obj != null)
         {
             obj.SetActive(true);
         }
-
     }
 
     private GameObject FindSpawnable(GameMode gm)
@@ -147,14 +164,22 @@ public class MapManager : MonoBehaviour
 
     public void StartGame()
     {
+        UnpauseGame();
+        PlayerDeaths.Value = 0;
+    }
+
+    public void UnpauseGame()
+    {
         Time.timeScale = 1f;
         Player.SetActive(true);
+        InGame.Value = true;
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0f;
         Player.SetActive(false);
+        InGame.Value = false;
     }
 
     public void OnPlayerRespawn()
@@ -177,8 +202,8 @@ public class MapManager : MonoBehaviour
         InGameTime.Value = 0;
         EntityOnScreen.Value = 0;
         intGameMode.Value = 0;
-        bNoHit.Value = false;
-        bSurvival.Value = false;
+        bNoHit.Value = bNoHit.Value;        // just to trigger the event
+        bSurvival.Value = bSurvival.Value;  //
         PauseGame();
     }
 }

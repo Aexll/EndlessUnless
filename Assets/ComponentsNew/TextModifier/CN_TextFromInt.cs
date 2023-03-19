@@ -15,4 +15,9 @@ public class CN_TextFromInt : MonoBehaviour
             TextToChange.text = newInt.ToString();
         };
     }
+    private void OnEnable()
+    {
+        TextToChange.text = intContainer.Value.ToString();
+    }
+
 }

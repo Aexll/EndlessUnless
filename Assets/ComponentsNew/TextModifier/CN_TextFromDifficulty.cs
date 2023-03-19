@@ -15,5 +15,10 @@ public class CN_TextFromDifficulty : MonoBehaviour
             TextToChange.text = ((GameMode)newInt).ToString();
         };
     }
+    private void OnEnable()
+    {
+        TextToChange.text = ((GameMode)intContainer.Value).ToString();
+    }
+
 
 }

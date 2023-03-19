@@ -12,7 +12,12 @@ public class CN_TextFromFloat : MonoBehaviour
     {
         intContainer.OnChange += (float newFloat) =>
         {
-            TextToChange.text = newFloat.ToString();
+            TextToChange.text = newFloat.ToString("F2");
         };
+    }
+
+    private void OnEnable()
+    {
+        TextToChange.text = intContainer.Value.ToString("F2");
     }
 }
