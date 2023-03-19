@@ -1,5 +1,6 @@
 # ReadMe
 
+![](https://github.com/Aexll/EndlessUnless/blob/main/Assets/Assets/The-revenge-of-the-skull.pnghttps://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
 
 ## Controles
@@ -9,16 +10,16 @@
 
 ## How to play
 
->You control the skull emoji and you need to go from a pipe to another to win.
+You control the skull emoji and you need to go from a pipe to another to win.
 
->Each times you win, a new entity will be spawned in the game
+Each times you win, a new entity will be spawned in the game
 
->Wining the game will unlock all the **achievements** of the Entities that were present on the map when you won
+Wining the game will unlock all the **achievements** of the Entities that were present on the map when you won
 
 
-> There is two levels of difficulty `Normal` and `Elite`
+There is two levels of difficulty `Normal` and `Elite`
 
-> There is two Games Modifiers `Survival` and `noHit`
+There is two Games Modifiers `Survival` and `noHit`
 
 ### Survival
 > You need to survive the longest, new entitys will spawn along time.
@@ -31,11 +32,11 @@
 
 
 # **Entities**
-## `Nomal` difficulty
+## `Normal` difficulty
 
 
 > ## Nuke
-    explode after 10 seconds
+    explode after 10 seconds, touch it to reset the timer
 
 > ## Bomber plane
     Launch bombes that only collide with the gound

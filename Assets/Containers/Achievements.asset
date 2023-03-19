@@ -19,10 +19,23 @@ MonoBehaviour:
     color: {r: 0.27450982, g: 0.25882354, b: 0.18039216, a: 1}
     img: {fileID: 21300000, guid: 009f6f6b3ec886f4aa0fa4d7622fee0f, type: 3}
     size: 2
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
+    OnUnlock:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: nuke(e)
+    name: big big boom
+    description: Meet da big nuke
+    color: {r: 0, g: 0.67276335, b: 1, a: 1}
+    img: {fileID: 21300000, guid: 009f6f6b3ec886f4aa0fa4d7622fee0f, type: 3}
+    size: 2
+    isUnlocked: 0
+    isDescriptionLocked: 0
+    maxRound: 0
+    gameMode: 1
     OnUnlock:
       m_PersistentCalls:
         m_Calls: []
@@ -32,9 +45,9 @@ MonoBehaviour:
     color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
     img: {fileID: 21300000, guid: 1f536930d3a0ea64d95d72d2e97a3b62, type: 3}
     size: 2
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -45,9 +58,9 @@ MonoBehaviour:
     color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
     img: {fileID: 21300000, guid: 0c5d0955677f92544a0bcef0cee4ad4d, type: 3}
     size: 3
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 3
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -58,9 +71,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
     img: {fileID: 21300000, guid: 2cd4965c589b459409f6920c071d08b2, type: 3}
     size: 0.5
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -71,9 +84,9 @@ MonoBehaviour:
     color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
     img: {fileID: 21300000, guid: 475ce3eea6533e14ba2112c4bd09021e, type: 3}
     size: 0.5
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -97,9 +110,9 @@ MonoBehaviour:
     color: {r: 0.7971698, g: 0.93905574, b: 1, a: 1}
     img: {fileID: 21300000, guid: 4756f2d8bc26dbf48a77406c099051c5, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 3
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -110,9 +123,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.17647058, b: 0.19032623, a: 1}
     img: {fileID: 21300000, guid: ce968553bc7cff24a85929f1fcd31957, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -121,11 +134,11 @@ MonoBehaviour:
     name: The red, green, blue, and yellow buttons
     description: Would should press all the button.
     color: {r: 1, g: 0.17647058, b: 0.19032623, a: 1}
-    img: {fileID: 1392270879, guid: 4ad35d372a895434ba8392cf486c0147, type: 3}
+    img: {fileID: 21300000, guid: 0bccddfe29c31a54bbff903728ab889d, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -136,9 +149,9 @@ MonoBehaviour:
     color: {r: 0.34509805, g: 0.39607847, b: 0.9490197, a: 1}
     img: {fileID: 21300000, guid: d88bf6d6673460b45a8c33413dc642c2, type: 3}
     size: 0.5
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -149,9 +162,9 @@ MonoBehaviour:
     color: {r: 0.34509805, g: 0.39607847, b: 0.9490197, a: 1}
     img: {fileID: 21300000, guid: bb131397e74181049be868a243f5f6e8, type: 3}
     size: 0.5
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -162,9 +175,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.4115971, b: 0.3726415, a: 1}
     img: {fileID: 21300000, guid: 543607d032ce3ad479576c4b26658477, type: 3}
     size: 0.8
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -175,9 +188,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.4115971, b: 0.3726415, a: 1}
     img: {fileID: 21300000, guid: 543607d032ce3ad479576c4b26658477, type: 3}
     size: 0.8
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -188,9 +201,9 @@ MonoBehaviour:
     color: {r: 0, g: 0.6862745, b: 0.94117653, a: 1}
     img: {fileID: 21300000, guid: c7c00e5a69eee2e428dbff5312d5bb82, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -201,9 +214,9 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     img: {fileID: 21300000, guid: 231e5b5140ffdc845834661acd069779, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -240,9 +253,9 @@ MonoBehaviour:
     color: {r: 0.7960785, g: 0.32156864, b: 0.07450981, a: 1}
     img: {fileID: 21300000, guid: e987e6ff6798eed45bd162fdb57801c3, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -253,9 +266,9 @@ MonoBehaviour:
     color: {r: 0.7960785, g: 0.32156864, b: 0.07450981, a: 1}
     img: {fileID: 21300000, guid: e987e6ff6798eed45bd162fdb57801c3, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -278,11 +291,11 @@ MonoBehaviour:
     description: 'GET OUT OF MY HEAD GET OUT OF MY HEAD GET OUT OF MY HEAD GET OUT
       OF MY HEAD '
     color: {r: 1, g: 0, b: 0, a: 1}
-    img: {fileID: 1946219296, guid: de4acead1207dc840a51d3e9fbaace2d, type: 3}
+    img: {fileID: 21300000, guid: bdc73a41e409d234c8318d4bf77c99b1, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -293,9 +306,9 @@ MonoBehaviour:
     color: {r: 0, g: 0, b: 0, a: 1}
     img: {fileID: 21300000, guid: 4a97218bb91a98c4181269e21fe11ee8, type: 3}
     size: 3
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -319,9 +332,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.639942, b: 0.32549024, a: 1}
     img: {fileID: 21300000, guid: 2976dbf8cc5cfe349a61d33e55cf563d, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -332,9 +345,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.639942, b: 0.32549024, a: 1}
     img: {fileID: 21300000, guid: 51236b0b6d380d14c91bc8f2de93e2f1, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -345,9 +358,9 @@ MonoBehaviour:
     color: {r: 0.7323434, g: 0.2588235, b: 1, a: 1}
     img: {fileID: 21300000, guid: c8f4102e3ee061a4fa502f83f708dabf, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -358,9 +371,9 @@ MonoBehaviour:
     color: {r: 0.7323434, g: 0.2588235, b: 1, a: 1}
     img: {fileID: 21300000, guid: c8f4102e3ee061a4fa502f83f708dabf, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -371,9 +384,9 @@ MonoBehaviour:
     color: {r: 1, g: 0.25943398, b: 0.25943398, a: 1}
     img: {fileID: -551082938411016477, guid: c7987bd8ce19fb8458e592c6717f930b, type: 3}
     size: 1
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 2
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -397,9 +410,9 @@ MonoBehaviour:
     color: {r: 0.12950963, g: 0.9647059, b: 0, a: 1}
     img: {fileID: 21300000, guid: 1d5a4cb704da2e74b92a76eacd46b226, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -410,9 +423,9 @@ MonoBehaviour:
     color: {r: 0.12950963, g: 0.9647059, b: 0, a: 1}
     img: {fileID: 21300000, guid: 4fcf0fe84bba42b4ebd591cc8bffc6c4, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 9
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -423,9 +436,9 @@ MonoBehaviour:
     color: {r: 0.12941177, g: 0.96470594, b: 0, a: 1}
     img: {fileID: 21300000, guid: accedf211710625488f550d9e01a40d6, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:
@@ -436,9 +449,9 @@ MonoBehaviour:
     color: {r: 0.12941177, g: 0.96470594, b: 0, a: 1}
     img: {fileID: 21300000, guid: 2df7c78534af0aa4499eca00876cad14, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 3
+    maxRound: 0
     gameMode: 1
     OnUnlock:
       m_PersistentCalls:
@@ -449,9 +462,9 @@ MonoBehaviour:
     color: {r: 0.39058298, g: 0.2688679, b: 1, a: 1}
     img: {fileID: 21300000, guid: a2f205c55d336e64f8fb7da1b780dcbc, type: 3}
     size: 0.6
-    isUnlocked: 1
+    isUnlocked: 0
     isDescriptionLocked: 0
-    maxRound: 15
+    maxRound: 0
     gameMode: 0
     OnUnlock:
       m_PersistentCalls:

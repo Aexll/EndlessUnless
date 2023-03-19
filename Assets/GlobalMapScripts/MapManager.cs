@@ -174,7 +174,7 @@ public class MapManager : MonoBehaviour
 
     public void StartGame()
     {
-        CleanAllSpawned();
+        ResetAllStates();
         UnpauseGame();
         PlayerDeaths.Value = 0;
     }
@@ -197,7 +197,7 @@ public class MapManager : MonoBehaviour
     {
         PlayerDeaths.Value++;
 
-        print("Player dead");
+        //print("Player dead");
         if(bNoHit.Value || bSurvival.Value)
         {
             PauseGame();
