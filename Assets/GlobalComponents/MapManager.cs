@@ -14,30 +14,54 @@ public enum GameMode
 }
 
 
-public class MapManager : MonoBehaviour, IResetable
+public class MapManager : MonoBehaviour
 {
 
     [SerializeField] private SO_AchievementList _AchievementList;
     [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject LoseMenu;
+
 
     // list of all objects on the map with the achievable script
     private List<C_Achievable> AchievableList;
 
-    public UnityEvent<string> OnNewNB;
+    //public UnityEvent<string> OnNewNB;
 
-    private int round = 0;
-    GameMode gameMode = GameMode.Normal;
+
+    // game options
+    //private GameMode gameMode = GameMode.Normal;
+    //private bool NoHitEnabled = false;
+    //private bool SurvivalEnabled = false;
+
+    // game options
+    public intc intGameMode;
+    public boolc bNoHit;
+    public boolc bSurvival;
+
+    // game info
+    public intc EntityOnScreen;
+    public floatc InGameTime;
+
+    // game events
+    public SO_Action PlayerRespawn;
+
+
+    // wrapper for the gamemode
+    public GameMode gameMode
+    {
+        get { return (GameMode)intGameMode.Value; }
+    }
 
 
     private void Awake()
     {
         AchievableList = AxelUtils.FindObjectsImplementingInterface<C_Achievable>(false);
+        PlayerRespawn.OnTrigger.AddListener(OnPlayerRespawn);
     }
 
     private void Start()
     {
-        Player.SetActive(false);
-        PauseGame();
+        ResetAllStates();
     }
 
     public void OnPlayerWin()
@@ -46,7 +70,7 @@ public class MapManager : MonoBehaviour, IResetable
         // unlock new achievements
         if (AchievableList != null)
         {   
-            // count
+            // count of the enity on the map
             foreach (var item in AchievableList)
             {
                 if(item.isActive(gameMode))
@@ -55,8 +79,9 @@ public class MapManager : MonoBehaviour, IResetable
                 }
             }
 
-            round = nb;
+            EntityOnScreen.Value = nb;
 
+            // unlock locked achievments
             foreach (var item in AchievableList)
             {
                 if(item.isActive(gameMode))
@@ -64,19 +89,24 @@ public class MapManager : MonoBehaviour, IResetable
                     string finalId = item.achievementId;
                     if (gameMode == GameMode.Elite) finalId += "(e)";
                     else if (gameMode == GameMode.Cursed) finalId += "(c)";
-                    print(finalId);
-                    _AchievementList.UnlockAchievement(finalId, round);
+                    //print(finalId);
+                    _AchievementList.UnlockAchievement(finalId, EntityOnScreen.Value);
                 }
             }
         }
-        
+        else
+        {
+            EntityOnScreen.Value = 0;
+        }
+
+
+        // spawn a new object
         var obj = FindSpawnable(gameMode);
         if(obj != null)
         {
             obj.SetActive(true);
         }
 
-        OnNewNB?.Invoke((round-1).ToString());
     }
 
     private GameObject FindSpawnable(GameMode gm)
@@ -101,45 +131,51 @@ public class MapManager : MonoBehaviour, IResetable
         _AchievementList.ClearUnlocks();
     }
 
+    // remove all the objects spawned on the map
     public void CleanAllSpawned()
     {
-        AchievableList.Shuffle();
         foreach (var item in AchievableList)
         {
-            if (item.objToActivate.activeSelf)
-            {
+            if(item.objToActivate != null)
                 item.objToActivate.SetActive(false);
-            }
+            if(item.objToActivateElite != null)
+                item.objToActivateElite.SetActive(false);
         }
 
     }
 
-    public void StartGame(int mode)
+    public void StartGame()
     {
         Time.timeScale = 1f;
         Player.SetActive(true);
-        switch (mode)
-        {
-            case 0:
-                gameMode = GameMode.Normal;
-                break;
-            case 1:
-                gameMode = GameMode.Elite;
-                break;
-            case 2:
-                gameMode = GameMode.Cursed;
-                break;
-            default: break;
-        }
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0f;
+        Player.SetActive(false);
     }
 
-    public void Reseting()
+    public void OnPlayerRespawn()
     {
         print("Player dead");
+        if(bNoHit || bSurvival)
+        {
+            PauseGame();
+            CleanAllSpawned();
+            LoseMenu.SetActive(true);
+        }
+    }
+
+    public void ResetAllStates()
+    {
+        CleanAllSpawned();
+        Player.SetActive(false);
+        InGameTime.Value = 0;
+        EntityOnScreen.Value = 0;
+        intGameMode.Value = 0;
+        bNoHit.Value = false;
+        bSurvival.Value = false;
+        PauseGame();
     }
 }
