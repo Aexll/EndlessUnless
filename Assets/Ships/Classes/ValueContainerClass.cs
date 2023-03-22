@@ -2,18 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
 using UnityEngine;
 
-[Serializable]
-public class ValueContainerClass<C,SO> : MonoBehaviour where SO : SO_ValueContainer<C>
+[ Serializable ]
+public class ValueContainerClass<C,SO> where SO : SO_ValueContainer<C>
 {
-    C valueLocal;
-    SO valueContainer;
+    public C valueLocal;
+    public SO valueContainer;
 
-    C Value
+    public C Value
     {
         get {
-            if (valueContainer != null) return (valueContainer).Value;
+            if (valueContainer != null) return valueContainer.Value;
             else return valueLocal;
         }
         set
@@ -27,8 +28,35 @@ public class ValueContainerClass<C,SO> : MonoBehaviour where SO : SO_ValueContai
 
 // subclasses
 
+[Serializable]
+public class intcc : ValueContainerClass<int,intc> {
+    public int valueL = 0;
+    public intc valueC;
+};
 
-public class intcc : ValueContainerClass<int,intc> { };
+[Serializable]
+public class intccc
+{
+    public int valueL = 0;
+    public intc valueC;
+
+    public int Value
+    {
+        get {
+            if (valueC != null) return valueC.Value;
+            else return valueL;
+        }
+        set
+        {
+            if(valueC != null) { valueC.Value = value; }
+            else { valueL = value; }
+        }
+    }
+
+}
+
+
+
 public class floatcc : ValueContainerClass<float,floatc> { };
 public class boolcc : ValueContainerClass<bool,boolc> { };
 public class stringcc : ValueContainerClass<string,stringc> { };

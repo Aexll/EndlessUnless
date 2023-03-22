@@ -16,8 +16,10 @@ public class IngredientDrawer : PropertyDrawer
         var indent = EditorGUI.indentLevel;
         EditorGUI.indentLevel = 0;
 
-        var pp = property.FindPropertyRelative("valueContainer");
-        var obj = pp.objectReferenceValue;
+        var pp = property.FindPropertyRelative("valueC");
+        object obj = null;
+        if (pp != null)
+            obj = pp.objectReferenceValue;
 
 
 
@@ -48,12 +50,13 @@ public class IngredientDrawer : PropertyDrawer
 
 
         // Draw fields - pass GUIContent.none to each so they are drawn without labels
-        EditorGUI.PropertyField(amountRect, property.FindPropertyRelative("valueLocal"), GUIContent.none);
-        EditorGUI.PropertyField(unitRect, property.FindPropertyRelative("valueContainer"), GUIContent.none);
+        EditorGUI.PropertyField(amountRect, property.FindPropertyRelative("valueL"), GUIContent.none);
+        EditorGUI.PropertyField(unitRect, property.FindPropertyRelative("valueC"), GUIContent.none);
 
 
-        if (EditorGUI.LinkButton(btnRect, "test"))
+        if (GUI.Button(btnRect, "create"))
         {
+            
             Debug.Log("Hello");
         }
         EditorGUI.indentLevel = 0;
