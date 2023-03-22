@@ -1,11 +1,12 @@
 using JetBrains.Annotations;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEditor;
 using UnityEngine;
 
 
 [CustomPropertyDrawer(typeof(intcc))]
-public class IngredientDrawer : PropertyDrawer
+public class ContainerDrawer : PropertyDrawer
 {
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
@@ -16,10 +17,16 @@ public class IngredientDrawer : PropertyDrawer
         var indent = EditorGUI.indentLevel;
         EditorGUI.indentLevel = 0;
 
-        var pp = property.FindPropertyRelative("valueC");
+
+
+        SerializedProperty valueLocal = property.FindPropertyRelative("valueLocal");
+        SerializedProperty valueContainer = property.FindPropertyRelative("valueContainer");
+        
+        
+        
         object obj = null;
-        if (pp != null)
-            obj = pp.objectReferenceValue;
+        if (valueContainer != null)
+            obj = valueContainer.objectReferenceValue;
 
 
 
@@ -32,8 +39,8 @@ public class IngredientDrawer : PropertyDrawer
         {
 
             // Calculate rects
-            amountRect = new Rect(position.x, position.y, position.size.x / 2, position.height);
-            unitRect = new Rect(position.x + position.size.x/2, position.y,20, position.height);
+            amountRect = new Rect(position.x, position.y, position.size.x * 0.8f - 20, position.height);
+            unitRect = new Rect(position.x + position.size.x * 0.8f - 20, position.y,20, position.height);
 
         }
         else
@@ -41,23 +48,28 @@ public class IngredientDrawer : PropertyDrawer
 
             // Calculate rects
             amountRect = new Rect(position.x, position.y, position.size.x / 8, position.height);
-            unitRect = new Rect(position.x, position.y,position.size.x * .625f, position.height);
+            unitRect = new Rect(position.x, position.y,position.size.x * .8f, position.height);
 
         }
 
 
-        btnRect = new Rect(position.x + position.size.x * .625f, position.y, position.size.x - position.size.x * .625f - 5, position.height);
+        btnRect = new Rect(position.x + position.size.x * .8f, position.y, position.size.x - position.size.x * .8f - 5, position.height);
 
 
         // Draw fields - pass GUIContent.none to each so they are drawn without labels
-        EditorGUI.PropertyField(amountRect, property.FindPropertyRelative("valueL"), GUIContent.none);
-        EditorGUI.PropertyField(unitRect, property.FindPropertyRelative("valueC"), GUIContent.none);
+        EditorGUI.PropertyField(amountRect, property.FindPropertyRelative("valueLocal"), GUIContent.none);
+        EditorGUI.PropertyField(unitRect, property.FindPropertyRelative("valueContainer"), GUIContent.none);
+
+        string prefix = "Ci_";
 
 
-        if (GUI.Button(btnRect, "create"))
+        if (GUI.Button(btnRect, "new"))
         {
+            intc newSO = AssetCreator.Create<int,intc>(prefix + CustomFunction.ToCamelCase(label.text));
             
-            Debug.Log("Hello");
+            //if(newSO != null) { valueContainer.objectReferenceValue = newSO; }
+
+            GUIUtility.ExitGUI();
         }
         EditorGUI.indentLevel = 0;
 
@@ -72,11 +84,18 @@ public class IngredientDrawer : PropertyDrawer
 
 public static class AssetCreator
 {
-    public static void Create()
+    public static SO Create<C,SO>(string assetName) where SO : SO_ValueContainer<C>
     {
         Debug.Log("Hello world !");
-        intc newSO = ScriptableObject.CreateInstance<intc>();
-        AssetDatabase.CreateAsset(newSO, "Assets/Ships/test.asset");
-        AssetDatabase.SaveAssets();
+        string absPath = EditorUtility.OpenFolderPanel("Select a folder", "Assets/Ships/Created", "");
+        if(absPath.Length != 0)
+        {
+            string relativePath = absPath.Substring(absPath.IndexOf("Assets/"));
+            SO newSO = ScriptableObject.CreateInstance<SO>();
+            AssetDatabase.CreateAsset(newSO, relativePath + "/" + assetName + ".asset");
+            return newSO;
+            //AssetDatabase.SaveAssets();
+        }
+        return null;
     }
 }
