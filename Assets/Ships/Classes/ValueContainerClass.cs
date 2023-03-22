@@ -28,35 +28,7 @@ public class ValueContainerClass<C,SO> where SO : SO_ValueContainer<C>
 
 // subclasses
 
-[Serializable]
-public class intcc : ValueContainerClass<int,intc> {
-    public int valueL = 0;
-    public intc valueC;
-};
-
-[Serializable]
-public class intccc
-{
-    public int valueL = 0;
-    public intc valueC;
-
-    public int Value
-    {
-        get {
-            if (valueC != null) return valueC.Value;
-            else return valueL;
-        }
-        set
-        {
-            if(valueC != null) { valueC.Value = value; }
-            else { valueL = value; }
-        }
-    }
-
-}
-
-
-
-public class floatcc : ValueContainerClass<float,floatc> { };
-public class boolcc : ValueContainerClass<bool,boolc> { };
-public class stringcc : ValueContainerClass<string,stringc> { };
+[Serializable] public class intcc : ValueContainerClass<int,intc> { };
+[Serializable] public class floatcc : ValueContainerClass<float,floatc> { };
+[Serializable] public class boolcc : ValueContainerClass<bool,boolc> { };
+[Serializable] public class stringcc : ValueContainerClass<string,stringc> { };

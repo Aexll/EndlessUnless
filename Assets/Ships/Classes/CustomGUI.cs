@@ -27,8 +27,8 @@ public class MyWindow : EditorWindow
 
         if (GUILayout.Button("Test"))
         {
-            intc container = AssetCreator.Create<int, intc>("lol");
-            intcont = container;
+            //intc container = AssetCreator.Create<int, intc>("lol",null);
+            //intcont = container;
         }
 
         //groupEnabled = EditorGUILayout.BeginToggleGroup("Optional Settings", groupEnabled);
